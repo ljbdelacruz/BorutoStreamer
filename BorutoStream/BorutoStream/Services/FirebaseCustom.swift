@@ -61,6 +61,13 @@ class FirebaseCustom{
         print(id);
         return id;
     }
+    static func toURL(url:String)->URL{
+        return URL(string: url)!;
+    }
+    static func toURLReq(url:URL)->URLRequest{
+        return URLRequest(url: url);
+    }
+    
 }
 
 

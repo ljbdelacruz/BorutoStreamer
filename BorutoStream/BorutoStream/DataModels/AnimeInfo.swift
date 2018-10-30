@@ -10,15 +10,16 @@ import Foundation
 import Firebase
 
 class AnimeInfo{
-    var BGImage,PImage,Title, Prevideo : String?;
+    var ID,BGImage,PImage,Title, Prevideo : String?;
     var episodes:[EpisodeInfo]=[];
     init(){
     }
-    convenience init(bgimage:String, pimage:String, title:String, prev:String){
+    convenience init(id:String,bgimage:String, pimage:String, title:String, prev:String){
         self.init()
-        self.set(bgimage: bgimage, pimage: pimage, title:title, prev: prev)
+        self.set(id:id,bgimage: bgimage, pimage: pimage, title:title, prev: prev)
     }
-    func set(bgimage:String, pimage:String, title:String, prev:String){
+    func set(id:String, bgimage:String, pimage:String, title:String, prev:String){
+        self.ID=id;
         self.BGImage=bgimage;
         self.PImage=pimage
         self.Title=title;
@@ -30,7 +31,7 @@ class AnimeInfo{
             (ds) in
             let dict=ds!.value as! Dictionary<String, Any>;
             if ds != nil {
-                completionHandler(AnimeInfo.setup(dict: dict), nil);
+                completionHandler(AnimeInfo.setup(key:ds!.key, dict: dict), nil);
             }else{
                 completionHandler(nil, "sorry problem fetching animes")
             }
@@ -39,9 +40,9 @@ class AnimeInfo{
     static func likeName(title:String, animes:[AnimeInfo])->[AnimeInfo]{
         return animes.filter({ ($0.Title?.contains(title))! })
     }
-    static func setup(dict:[String:Any])->AnimeInfo{
+    static func setup(key:String,dict:[String:Any])->AnimeInfo{
         var temp=AnimeInfo();
-        temp.set(bgimage: dict["bgimage"] as! String, pimage: dict["pimage"] as! String, title: dict["title"] as! String, prev:dict["prevideo"] as! String);
+        temp.set(id:key,bgimage: dict["bgimage"] as! String, pimage: dict["pimage"] as! String, title: dict["title"] as! String, prev:dict["prevideo"] as! String);
         return temp;
     }
     
