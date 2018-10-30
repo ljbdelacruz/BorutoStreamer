@@ -13,6 +13,6 @@ pod 'Firebase/Database'
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'SVProgressHUD'
-
+pod 'Toast-Swift'
 
 end

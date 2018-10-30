@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SVProgressHUD;
+import Toast_Swift
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var UIAnimeSB: UISearchBar!
     @IBOutlet weak var UIAnimeTV: UITableView!
-    
     var animes:[AnimeInfo]=[]
     var origList:[AnimeInfo]=[]
     var selectedAnime:AnimeInfo?;
@@ -28,10 +28,9 @@ class ViewController: UIViewController {
         if segue.identifier == "listToAnimeInfo" {
             let destVC=segue.destination as! AnimeInfoViewController
             destVC.animeInfo=self.selectedAnime;
+            destVC.viewCompleteDelegate=self;
         }
     }
-    
-    
 }
 //MARK: -Searchbar func
 extension ViewController:UISearchBarDelegate{
@@ -57,7 +56,11 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.selectedAnime=self.animes[indexPath.row];
-        performSegue(withIdentifier: "listToAnimeInfo", sender: nil);
+        self.view.makeToast("Please wait loading resources")
+        self.view.isUserInteractionEnabled=false;
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "listToAnimeInfo", sender: nil);
+        }
     }
 }
 //MARK: -Firebase func
@@ -79,5 +82,14 @@ extension ViewController{
             print(self.animes.count)
         }
     }
+}
+//MARK: -Delegates
+extension ViewController : ViewCompleteDelegate{
+    func completeViewLoad() {
+        self.view.isUserInteractionEnabled=true;
+        self.view.hideToast()
+    }
+    
+    
 }
 

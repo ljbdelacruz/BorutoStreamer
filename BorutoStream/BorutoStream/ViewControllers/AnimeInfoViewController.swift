@@ -17,6 +17,7 @@ class AnimeInfoViewController: UIViewController {
     @IBOutlet weak var UIVideoPrevView: UIView!
     @IBOutlet weak var UITitle: UILabel!
     @IBOutlet weak var UIScrollView: UIScrollView!
+    var viewCompleteDelegate:ViewCompleteDelegate?;
     
     var animeInfo:AnimeInfo?;
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class AnimeInfoViewController: UIViewController {
         self.UITitle.text=self.animeInfo?.Title
         FetchVideo(vidurl: self.animeInfo?.Prevideo ?? "", nvidURL: "")
         self.UIScrollView.contentSize=CGSize(width: UIScrollView.frame.width, height: self.UIEpisodeTV.frame.height+self.UIVideoPrevView.frame.height);
+        self.viewCompleteDelegate?.completeViewLoad();
     }
     
 }

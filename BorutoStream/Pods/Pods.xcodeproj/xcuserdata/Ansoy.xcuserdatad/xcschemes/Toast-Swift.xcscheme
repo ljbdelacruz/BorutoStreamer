@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66FD8B512FE93E1F28304148B76B3525"
-               BuildableName = "Pods_BorutoStream.framework"
-               BlueprintName = "Pods-BorutoStream"
+               BlueprintIdentifier = "B530855606CC84C950ACD451335344FC"
+               BuildableName = "Toast_Swift.framework"
+               BlueprintName = "Toast-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66FD8B512FE93E1F28304148B76B3525"
-            BuildableName = "Pods_BorutoStream.framework"
-            BlueprintName = "Pods-BorutoStream"
+            BlueprintIdentifier = "B530855606CC84C950ACD451335344FC"
+            BuildableName = "Toast_Swift.framework"
+            BlueprintName = "Toast-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
