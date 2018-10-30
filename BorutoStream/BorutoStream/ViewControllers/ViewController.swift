@@ -51,8 +51,6 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        print("Reload Data")
-        print(self.animes[indexPath.row].Title)
         cell.textLabel?.text = self.animes[indexPath.row].Title
         return cell;
     }
@@ -65,16 +63,16 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
 //MARK: -Firebase func
 extension ViewController{
     func LoadData(search:String){
-        if self.origList.count ?? 0 <= 0 && search.count <= 0 {
+        if self.origList.count <= 0 && search.count <= 0 {
             AnimeInfo.all(completionHandler: {(data, err) in
-                print(data?.Title);
                 self.animes.append(data!);
-                print(self.animes.count);
                 self.origList=self.animes;
                 self.UIAnimeTV.reloadData()
             })
         }else if search.count <= 0{
             self.animes=origList;
+            self.UIAnimeTV.reloadData();
+            print(origList.count)
         }else{
             self.animes=AnimeInfo.likeName(title: search, animes: self.animes);
             self.UIAnimeTV.reloadData()
