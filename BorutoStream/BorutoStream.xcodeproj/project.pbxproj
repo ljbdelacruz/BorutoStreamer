@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43029281A8054DDBFF92CF7E /* Pods_BorutoStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52785C38E0036E04435634E /* Pods_BorutoStream.framework */; };
 		6F4B348A21884D3F00879CCB /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B348921884D3F00879CCB /* PlayVideoViewController.swift */; };
+		6F4B34B42188976300879CCB /* Pods_BorutoStream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E52785C38E0036E04435634E /* Pods_BorutoStream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F4B34B6218897EF00879CCB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34B5218897EF00879CCB /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34B8218897EF00879CCB /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34B7218897EF00879CCB /* FirebaseAuth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34BA218897EF00879CCB /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34B9218897EF00879CCB /* FirebaseCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34BC218897EF00879CCB /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34BB218897EF00879CCB /* FirebaseDatabase.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34BE218897EF00879CCB /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34BD218897EF00879CCB /* GoogleUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34C0218897EF00879CCB /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34BF218897EF00879CCB /* GTMSessionFetcher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34C2218897EF00879CCB /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34C1218897EF00879CCB /* leveldb.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34C4218897EF00879CCB /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34C3218897EF00879CCB /* nanopb.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34C6218897EF00879CCB /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34C5218897EF00879CCB /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34C8218897EF00879CCB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34C7218897EF00879CCB /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6F4B34CA218897EF00879CCB /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4B34C9218897EF00879CCB /* Toast_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6FA5B6B42187A3BD00B1AED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5B6B32187A3BD00B1AED6 /* AppDelegate.swift */; };
 		6FA5B6B62187A3BD00B1AED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5B6B52187A3BD00B1AED6 /* ViewController.swift */; };
 		6FA5B6B92187A3BD00B1AED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA5B6B72187A3BD00B1AED6 /* Main.storyboard */; };
@@ -22,9 +33,75 @@
 		6FA5B6DA21881B6500B1AED6 /* ViewCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5B6D921881B6500B1AED6 /* ViewCompleteDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6F4B34B32188975000879CCB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6F4B34B42188976300879CCB /* Pods_BorutoStream.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		10554D555AC46BCACD17E085 /* Pods-BorutoStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BorutoStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-BorutoStream/Pods-BorutoStream.release.xcconfig"; sourceTree = "<group>"; };
 		6F4B348921884D3F00879CCB /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
+		6F4B34B5218897EF00879CCB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34B7218897EF00879CCB /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34B9218897EF00879CCB /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34BB218897EF00879CCB /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34BD218897EF00879CCB /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34BF218897EF00879CCB /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34C1218897EF00879CCB /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34C3218897EF00879CCB /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34C5218897EF00879CCB /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34C7218897EF00879CCB /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34C9218897EF00879CCB /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4B34CB218899A500879CCB /* libswiftQuartzCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftQuartzCore.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftQuartzCore.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34CC218899A500879CCB /* libswiftGLKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftGLKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftGLKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34CD218899A500879CCB /* libswiftCoreData.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreData.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreData.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34CE218899A500879CCB /* libswiftSceneKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSceneKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftSceneKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34CF218899A600879CCB /* libswiftsimd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftsimd.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftsimd.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D0218899A600879CCB /* libswiftUIKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftUIKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftUIKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D1218899A600879CCB /* libswiftWatchKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftWatchKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftWatchKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D2218899A600879CCB /* libswiftPhotos.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftPhotos.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftPhotos.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D3218899A600879CCB /* libswiftXCTest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftXCTest.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftXCTest.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D4218899A600879CCB /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCore.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D5218899A600879CCB /* libswiftModelIO.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftModelIO.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftModelIO.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D6218899A600879CCB /* libswiftObjectiveC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftObjectiveC.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftObjectiveC.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D7218899A600879CCB /* libswiftGameplayKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftGameplayKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftGameplayKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D8218899A600879CCB /* libswiftAssetsLibrary.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAssetsLibrary.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftAssetsLibrary.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34D9218899A600879CCB /* libswiftRemoteMirror.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftRemoteMirror.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftRemoteMirror.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DA218899A600879CCB /* libswiftMetalKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMetalKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftMetalKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DB218899A600879CCB /* libswiftFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftFoundation.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftFoundation.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DC218899A600879CCB /* libswiftAccelerate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAccelerate.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftAccelerate.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DD218899A600879CCB /* libswiftSwiftOnoneSupport.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSwiftOnoneSupport.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftSwiftOnoneSupport.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DE218899A600879CCB /* libswiftHomeKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftHomeKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftHomeKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34DF218899A600879CCB /* libswiftCoreAudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreAudio.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreAudio.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E0218899A700879CCB /* libswiftCoreFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreFoundation.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreFoundation.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E1218899A700879CCB /* libswiftDarwin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDarwin.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftDarwin.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E2218899A700879CCB /* libswiftCallKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCallKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCallKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E3218899A700879CCB /* libswiftNetwork.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftNetwork.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftNetwork.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E4218899A700879CCB /* libswiftDispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDispatch.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftDispatch.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E5218899A700879CCB /* libswiftCoreLocation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreLocation.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreLocation.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E6218899A700879CCB /* libswiftIntents.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftIntents.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftIntents.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E7218899A700879CCB /* libswiftCoreMedia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreMedia.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreMedia.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E8218899A700879CCB /* libswiftSpriteKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftSpriteKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftSpriteKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34E9218899A700879CCB /* libswiftMetal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMetal.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftMetal.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34EA218899A700879CCB /* libswiftCoreImage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreImage.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreImage.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34EB218899A700879CCB /* libswiftCloudKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCloudKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCloudKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34EC218899A700879CCB /* libswiftMediaPlayer.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMediaPlayer.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftMediaPlayer.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34ED218899A700879CCB /* libswiftContacts.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftContacts.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftContacts.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34EE218899A800879CCB /* libswiftARKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftARKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftARKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34EF218899A800879CCB /* libswiftVision.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftVision.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftVision.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34F0218899A800879CCB /* libswiftAVFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAVFoundation.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftAVFoundation.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34F1218899A800879CCB /* libswiftMapKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftMapKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftMapKit.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34F2218899A800879CCB /* libswiftCoreGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreGraphics.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftCoreGraphics.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34F3218899A800879CCB /* libswiftNaturalLanguage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftNaturalLanguage.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftNaturalLanguage.dylib; sourceTree = DEVELOPER_DIR; };
+		6F4B34F4218899A800879CCB /* libswiftos.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftos.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/libswiftos.dylib; sourceTree = DEVELOPER_DIR; };
 		6FA5B6B02187A3BD00B1AED6 /* BorutoStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorutoStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA5B6B32187A3BD00B1AED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FA5B6B52187A3BD00B1AED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +124,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43029281A8054DDBFF92CF7E /* Pods_BorutoStream.framework in Frameworks */,
+				6F4B34B6218897EF00879CCB /* Alamofire.framework in Frameworks */,
+				6F4B34B8218897EF00879CCB /* FirebaseAuth.framework in Frameworks */,
+				6F4B34BA218897EF00879CCB /* FirebaseCore.framework in Frameworks */,
+				6F4B34BC218897EF00879CCB /* FirebaseDatabase.framework in Frameworks */,
+				6F4B34BE218897EF00879CCB /* GoogleUtilities.framework in Frameworks */,
+				6F4B34C0218897EF00879CCB /* GTMSessionFetcher.framework in Frameworks */,
+				6F4B34C2218897EF00879CCB /* leveldb.framework in Frameworks */,
+				6F4B34C4218897EF00879CCB /* nanopb.framework in Frameworks */,
+				6F4B34C6218897EF00879CCB /* SVProgressHUD.framework in Frameworks */,
+				6F4B34C8218897EF00879CCB /* SwiftyJSON.framework in Frameworks */,
+				6F4B34CA218897EF00879CCB /* Toast_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +153,48 @@
 		6FA5B6A72187A3BD00B1AED6 = {
 			isa = PBXGroup;
 			children = (
+				6F4B34DC218899A600879CCB /* libswiftAccelerate.dylib */,
+				6F4B34EE218899A800879CCB /* libswiftARKit.dylib */,
+				6F4B34D8218899A600879CCB /* libswiftAssetsLibrary.dylib */,
+				6F4B34F0218899A800879CCB /* libswiftAVFoundation.dylib */,
+				6F4B34E2218899A700879CCB /* libswiftCallKit.dylib */,
+				6F4B34EB218899A700879CCB /* libswiftCloudKit.dylib */,
+				6F4B34ED218899A700879CCB /* libswiftContacts.dylib */,
+				6F4B34D4218899A600879CCB /* libswiftCore.dylib */,
+				6F4B34DF218899A600879CCB /* libswiftCoreAudio.dylib */,
+				6F4B34CD218899A500879CCB /* libswiftCoreData.dylib */,
+				6F4B34E0218899A700879CCB /* libswiftCoreFoundation.dylib */,
+				6F4B34F2218899A800879CCB /* libswiftCoreGraphics.dylib */,
+				6F4B34EA218899A700879CCB /* libswiftCoreImage.dylib */,
+				6F4B34E5218899A700879CCB /* libswiftCoreLocation.dylib */,
+				6F4B34E7218899A700879CCB /* libswiftCoreMedia.dylib */,
+				6F4B34E1218899A700879CCB /* libswiftDarwin.dylib */,
+				6F4B34E4218899A700879CCB /* libswiftDispatch.dylib */,
+				6F4B34DB218899A600879CCB /* libswiftFoundation.dylib */,
+				6F4B34D7218899A600879CCB /* libswiftGameplayKit.dylib */,
+				6F4B34CC218899A500879CCB /* libswiftGLKit.dylib */,
+				6F4B34DE218899A600879CCB /* libswiftHomeKit.dylib */,
+				6F4B34E6218899A700879CCB /* libswiftIntents.dylib */,
+				6F4B34F1218899A800879CCB /* libswiftMapKit.dylib */,
+				6F4B34EC218899A700879CCB /* libswiftMediaPlayer.dylib */,
+				6F4B34E9218899A700879CCB /* libswiftMetal.dylib */,
+				6F4B34DA218899A600879CCB /* libswiftMetalKit.dylib */,
+				6F4B34D5218899A600879CCB /* libswiftModelIO.dylib */,
+				6F4B34F3218899A800879CCB /* libswiftNaturalLanguage.dylib */,
+				6F4B34E3218899A700879CCB /* libswiftNetwork.dylib */,
+				6F4B34D6218899A600879CCB /* libswiftObjectiveC.dylib */,
+				6F4B34F4218899A800879CCB /* libswiftos.dylib */,
+				6F4B34D2218899A600879CCB /* libswiftPhotos.dylib */,
+				6F4B34CB218899A500879CCB /* libswiftQuartzCore.dylib */,
+				6F4B34D9218899A600879CCB /* libswiftRemoteMirror.dylib */,
+				6F4B34CE218899A500879CCB /* libswiftSceneKit.dylib */,
+				6F4B34CF218899A600879CCB /* libswiftsimd.dylib */,
+				6F4B34E8218899A700879CCB /* libswiftSpriteKit.dylib */,
+				6F4B34DD218899A600879CCB /* libswiftSwiftOnoneSupport.dylib */,
+				6F4B34D0218899A600879CCB /* libswiftUIKit.dylib */,
+				6F4B34EF218899A800879CCB /* libswiftVision.dylib */,
+				6F4B34D1218899A600879CCB /* libswiftWatchKit.dylib */,
+				6F4B34D3218899A600879CCB /* libswiftXCTest.dylib */,
 				6FA5B6B22187A3BD00B1AED6 /* BorutoStream */,
 				6FA5B6B12187A3BD00B1AED6 /* Products */,
 				08DAD3B9695A100AECADF960 /* Pods */,
@@ -136,6 +265,17 @@
 		C4D9C55862305C86ED466A48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F4B34B5218897EF00879CCB /* Alamofire.framework */,
+				6F4B34B7218897EF00879CCB /* FirebaseAuth.framework */,
+				6F4B34B9218897EF00879CCB /* FirebaseCore.framework */,
+				6F4B34BB218897EF00879CCB /* FirebaseDatabase.framework */,
+				6F4B34BD218897EF00879CCB /* GoogleUtilities.framework */,
+				6F4B34BF218897EF00879CCB /* GTMSessionFetcher.framework */,
+				6F4B34C1218897EF00879CCB /* leveldb.framework */,
+				6F4B34C3218897EF00879CCB /* nanopb.framework */,
+				6F4B34C5218897EF00879CCB /* SVProgressHUD.framework */,
+				6F4B34C7218897EF00879CCB /* SwiftyJSON.framework */,
+				6F4B34C9218897EF00879CCB /* Toast_Swift.framework */,
 				E52785C38E0036E04435634E /* Pods_BorutoStream.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +293,7 @@
 				6FA5B6AD2187A3BD00B1AED6 /* Frameworks */,
 				6FA5B6AE2187A3BD00B1AED6 /* Resources */,
 				279ED0CDB3EBA392AA305AC8 /* [CP] Embed Pods Frameworks */,
+				6F4B34B32188975000879CCB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -213,7 +354,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		279ED0CDB3EBA392AA305AC8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -238,10 +379,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BorutoStream/Pods-BorutoStream-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BorutoStream/Pods-BorutoStream-frameworks.sh\"\n\n";
 		};
 		4B7AD541BFEB76CB7A075E4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -304,6 +444,7 @@
 		6FA5B6C02187A3BF00B1AED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -336,6 +477,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -365,6 +507,7 @@
 		6FA5B6C12187A3BF00B1AED6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -397,6 +540,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -422,15 +566,19 @@
 			baseConfigurationReference = CFB43B927027A89AC4F42326 /* Pods-BorutoStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = BorutoStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.BorutoStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,15 +589,19 @@
 			baseConfigurationReference = 10554D555AC46BCACD17E085 /* Pods-BorutoStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CXP6R5M8;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = BorutoStream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljbdelacruz.BorutoStream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
